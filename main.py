@@ -114,9 +114,9 @@ if st.button('Predict Price'):
     predict_dict['age'] = age
     predict_dict['area'] = area
 
-    predict_dict['status_reduced'+status] = 1
-    predict_dict['location_reduced'+location] = 1
-    predict_dict['builder_reduced'+builder] = 1
+    predict_dict['status_reduced_'+status] = 1
+    predict_dict['location_reduced_'+location] = 1
+    predict_dict['builder_reduced_'+builder] = 1
 
     predict_df = pd.DataFrame.from_dict( predict_dict, orient='index').transpose()
     
